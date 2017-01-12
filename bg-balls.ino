@@ -1,6 +1,6 @@
 #include <Adafruit_NeoPixel.h>
-#define PIN 6
-#define NUM_LEDS 60
+#define PIN 6  //Defines the Datapin for NeoPixel
+#define NUM_LEDS 60 //Define the amount of neopixels you are using. I use 60 neopixels for this code
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
@@ -10,7 +10,7 @@ void setup() {
 
 
 void loop() {
-  byte colors[3][3] = { //{0x14, 0   , 0   }, //ROT
+  byte colors[3][3] = { //{0x14, 0   , 0   }, //ROT  
                         {0   , 0x14, 0   }, //GRUEN
                         {0x14, 0x14, 0   }, //GELB
                         //{0x14, 0x14, 0x14}, //WEISS
